@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestPostgresDocker", "TestPostgresDocker\TestPostgresDocker.csproj", "{A2945850-6829-4FC4-8DEB-89C3345BF333}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7FE00667-2C86-4CC6-87AC-AE8A2E8B6EEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2945850-6829-4FC4-8DEB-89C3345BF333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2945850-6829-4FC4-8DEB-89C3345BF333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2945850-6829-4FC4-8DEB-89C3345BF333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2945850-6829-4FC4-8DEB-89C3345BF333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE00667-2C86-4CC6-87AC-AE8A2E8B6EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE00667-2C86-4CC6-87AC-AE8A2E8B6EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE00667-2C86-4CC6-87AC-AE8A2E8B6EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE00667-2C86-4CC6-87AC-AE8A2E8B6EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17C81F63-E969-4002-B0EE-847985DFC51F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  testpostgresdocker:
+    image: ${DOCKER_REGISTRY-}testpostgresdocker
+    container_name: testpostgresdocker
+    build:
+      context: .
+      dockerfile: TestPostgresDocker/Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - POSTGRES_HOST=person.database
+      - POSTGRES_DB=Company
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password12345
+  person.database:
+    image: postgres:latest
+    container_name: person.database
+    environment:
+      - POSTGRES_HOST=person.database
+      - POSTGRES_DB=Company
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password12345
+    volumes:
+      - ./.containers/person-db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
